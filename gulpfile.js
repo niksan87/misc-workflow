@@ -7,7 +7,8 @@ const clean = require('gulp-clean');
 
 const SOURCEPATHS = {
     sassSource: 'src/scss/*.scss',
-    htmlSource: 'src/*.html'
+    htmlSource: 'src/*.html',
+    jsSource: 'src/js/*.js'
 }
 
 const APPPATH = {
@@ -21,6 +22,11 @@ gulp.task('clean-html', function () {
         .pipe(clean());
 });
 
+gulp.task('clean-scripts', function () {
+    return gulp.src(APPPATH.js + '/*.js', {read: false, force: true})
+        .pipe(clean());
+});
+
 gulp.task('sass', function () {
     return gulp.src(SOURCEPATHS.sassSource)
         .pipe(autoprefixer())
@@ -28,7 +34,12 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(APPPATH.css));
 });
 
-gulp.task('copy', ['clean-html'], function () {
+gulp.task('copy-scripts', ['clean-scripts'], function () {
+    gulp.src(SOURCEPATHS.jsSource)
+        .pipe(gulp.dest(APPPATH.js));
+})
+
+gulp.task('copy-html', ['clean-html'], function () {
     gulp.src(SOURCEPATHS.htmlSource)
         .pipe(gulp.dest(APPPATH.root));
 });
@@ -41,9 +52,10 @@ gulp.task('serve', ['sass'], function () {
     })
 });
 
-gulp.task('watch', ['serve', 'sass', 'copy', 'clean-html'], function () {
+gulp.task('watch', ['serve', 'sass', 'copy-html', 'clean-html', 'clean-scripts', 'copy-scripts'], function () {
     gulp.watch([SOURCEPATHS.sassSource], ['sass']);
-    gulp.watch([SOURCEPATHS.htmlSource], ['copy']);
+    gulp.watch([SOURCEPATHS.htmlSource], ['copy-html']);
+    gulp.watch([SOURCEPATHS.jsSource], ['copy-scripts']);
 });
 
 gulp.task('default', ['watch']);
