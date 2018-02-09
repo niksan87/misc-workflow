@@ -1,10 +1,34 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
 
-gulp.task('sass', function () {
-    return gulp.src('src/scss/app.scss')
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(gulp.dest('app/css'));
+const SOURCEPATHS = {
+    sassSource: 'src/scss/*.scss'
+}
+
+const APPPATH = {
+    root: 'app/',
+    css: 'app/css',
+    js: 'app/js'
+}
+
+gulp.task('watch', ['serve', 'sass'], function () {
+    gulp.watch([SOURCEPATHS.sassSource], ['sass']);
 });
 
-gulp.task('default', ['sass']);
+gulp.task('sass', function () {
+    return gulp.src(SOURCEPATHS.sassSource)
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(gulp.dest(APPPATH.css));
+});
+
+gulp.task('serve', ['sass'], function () {
+    browserSync.init([APPPATH.css + '/*.css', APPPATH.root + '/*html', APPPATH.js + '/*.js'], {
+        server: {
+            baseDir: APPPATH.root
+        }
+    })
+});
+
+gulp.task('default', ['watch']);
