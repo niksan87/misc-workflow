@@ -3,3 +3,12 @@ $black: #000000;
 body {
   background-color: $black;
 }
+
+h1 {
+  color: white;
+}
+h1:hover{
+  cursor: pointer;
+  color: blue;
+  transition: all .2s ease-in;
+}
