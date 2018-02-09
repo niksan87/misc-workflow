@@ -1,0 +1,25 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "Example workflow with NPM, SASS, Gulp and More",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niksan87/workflow.git"
+  },
+  "keywords": [
+    "NPM",
+    "SASS",
+    "Git",
+    "Gulp"
+  ],
+  "author": "Nikolai Stefanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niksan87/workflow/issues"
+  },
+  "homepage": "https://github.com/niksan87/workflow#readme"
+}
