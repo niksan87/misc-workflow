@@ -4,6 +4,7 @@ const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const autoprefixer = require('gulp-autoprefixer');
 const clean = require('gulp-clean');
+const concat = require('gulp-concat');
 
 const SOURCEPATHS = {
     sassSource: 'src/scss/*.scss',
@@ -18,24 +19,25 @@ const APPPATH = {
 }
 
 gulp.task('clean-html', function () {
-    return gulp.src(APPPATH.root + '/*.html', {read: false, force: true})
+    return gulp.src(APPPATH.root + '/*.html', { read: false, force: true })
         .pipe(clean());
 });
 
 gulp.task('clean-scripts', function () {
-    return gulp.src(APPPATH.js + '/*.js', {read: false, force: true})
+    return gulp.src(APPPATH.js + '/*.js', { read: false, force: true })
         .pipe(clean());
 });
 
 gulp.task('sass', function () {
     return gulp.src(SOURCEPATHS.sassSource)
         .pipe(autoprefixer())
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(gulp.dest(APPPATH.css));
 });
 
 gulp.task('copy-scripts', ['clean-scripts'], function () {
     gulp.src(SOURCEPATHS.jsSource)
+        .pipe(concat('main.js'))
         .pipe(gulp.dest(APPPATH.js));
 })
 
