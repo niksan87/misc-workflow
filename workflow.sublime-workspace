@@ -1,0 +1,425 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/js/js.js",
+			"settings":
+			{
+				"buffer_size": 16,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 108,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 91.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippets",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"impo",
+				"Import Helper: Update source modules"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git bran",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Import Helper: Update imports"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"importJ",
+				"ImportJS: import word under cursor"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"add pa",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instalk",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Import Helper: Update source modules"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"goIm",
+				"GoImports"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: Lis",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 314.0,
+		"history":
+		[
+			"Can't find import-js executable",
+			"Update imports",
+			"PWD"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/nikolay.stefanov/Documents/trainings/workflow",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src/js"
+	],
+	"file_history":
+	[
+		"/Users/nikolay.stefanov/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src/js/js.js",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/node_modules/rx/ts/core/linq/observable/max.ts",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/node_modules/.bin/gulp",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src/js/scripts.js",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src/about.html",
+		"/Users/nikolay.stefanov/Documents/trainings/workflow/src/index.html",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/src/sw-game.ts",
+		"/Users/nikolay.stefanov/Library/Application Support/Sublime Text 3/Packages/User/ImportJS.sublime-settings",
+		"/Users/nikolay.stefanov/Library/Application Support/Sublime Text 3/Packages/ImportJS/ImportJS.sublime-settings",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/tsconfig.min.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/tslint.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/src/LoaderTemplate.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/tsconfig.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/node_modules/@skywind-group/sw-extension-common/shared/SlotApplicationModule.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/node_modules/@skywind-group/sw-core/package.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/20timespay/client/src/LoaderTemplate.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/node_modules/@skywind-group/sw-extension-mark7/modules/server/ServerModuleMark7.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/node_modules/@skywind-group/sw-extension-mark7/managers/keyboard/KeyboardEventManagerMark7.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/node_modules/@skywind-group/sw-core/managers/KeyboardEventManager.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/id/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/zh-tw/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/zh-cn/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/vi/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/th/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/pt/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/ms/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/ko/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/km/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/ja/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/es/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/50timespay/client/data/config/i18n/en/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/20timespay/client/data/config/i18n/en/i18n_all_ways.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/20timespay/client/data/config/i18n/en/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/es/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/id/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/km/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/ko/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/ms/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/pt/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/zh-cn/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/zh-tw/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/5timespay/client/data/config/i18n/en/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/saves/5timespay",
+		"/Users/nikolay.stefanov/Documents/projects/files/fortune777/client/src/modules/payTable/PayTableModuleGameTemplate.ts",
+		"/Users/nikolay.stefanov/Documents/projects/files/fortune777/client/data/config/i18n/id/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/files/fortune777/.gitignore",
+		"/Users/nikolay.stefanov/Documents/projects/files/fortune777/builder/assets/i18n/en/i18n.json",
+		"/Users/nikolay.stefanov/Documents/projects/saves/fortune777.sublime-project"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 156.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/js/js.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 103.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "",
+	"project": "workflow.sublime-project",
+	"replace":
+	{
+		"height": 73.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"node_modules/skywind-group/sw-core/",
+				"client/node_modules/@skywind-group/sw-core/package.json"
+			],
+			[
+				"i18e",
+				"builder/assets/i18n/en/i18n.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/projects/saves/50timespay.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

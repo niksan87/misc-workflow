@@ -3,8 +3,10 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const autoprefixer = require('gulp-autoprefixer');
+const browserify = require('gulp-browserify');
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
+const merge = require('merge-stream');
 
 const SOURCEPATHS = {
     sassSource: 'src/scss/*.scss',
@@ -29,15 +31,23 @@ gulp.task('clean-scripts', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src(SOURCEPATHS.sassSource)
+    let bootstrapCss = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
+    let sassFiles;
+
+
+    sassFiles = gulp.src(SOURCEPATHS.sassSource)
         .pipe(autoprefixer())
         .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+
+        return merge(sassFiles, bootstrapCss)
+        .pipe(concat('app.css'))
         .pipe(gulp.dest(APPPATH.css));
 });
 
 gulp.task('copy-scripts', ['clean-scripts'], function () {
     gulp.src(SOURCEPATHS.jsSource)
         .pipe(concat('main.js'))
+        .pipe(browserify())
         .pipe(gulp.dest(APPPATH.js));
 })
 
