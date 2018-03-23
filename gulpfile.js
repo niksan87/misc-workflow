@@ -17,17 +17,18 @@ const SOURCEPATHS = {
 const APPPATH = {
     root: 'app/',
     css: 'app/css',
-    js: 'app/js'
+    js: 'app/js',
+    fonts: 'app/fonts'
 }
 
 gulp.task('clean-html', function () {
     return gulp.src(APPPATH.root + '/*.html', { read: false, force: true })
-        .pipe(clean());
+    .pipe(clean());
 });
 
 gulp.task('clean-scripts', function () {
     return gulp.src(APPPATH.js + '/*.js', { read: false, force: true })
-        .pipe(clean());
+    .pipe(clean());
 });
 
 gulp.task('sass', function () {
@@ -36,24 +37,29 @@ gulp.task('sass', function () {
 
 
     sassFiles = gulp.src(SOURCEPATHS.sassSource)
-        .pipe(autoprefixer())
-        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
 
-        return merge(sassFiles, bootstrapCss)
-        .pipe(concat('app.css'))
-        .pipe(gulp.dest(APPPATH.css));
+    return merge(sassFiles, bootstrapCss)
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest(APPPATH.css));
+});
+
+gulp.task('moveFonts', function(){
+    gulp.src('./node_modules/bootstrap/dist/fonts/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(gulp.dest(APPPATH.fonts))
 });
 
 gulp.task('copy-scripts', ['clean-scripts'], function () {
     gulp.src(SOURCEPATHS.jsSource)
-        .pipe(concat('main.js'))
-        .pipe(browserify())
-        .pipe(gulp.dest(APPPATH.js));
+    .pipe(concat('main.js'))
+    .pipe(browserify())
+    .pipe(gulp.dest(APPPATH.js));
 })
 
 gulp.task('copy-html', ['clean-html'], function () {
     gulp.src(SOURCEPATHS.htmlSource)
-        .pipe(gulp.dest(APPPATH.root));
+    .pipe(gulp.dest(APPPATH.root));
 });
 
 gulp.task('serve', ['sass'], function () {
@@ -64,7 +70,7 @@ gulp.task('serve', ['sass'], function () {
     })
 });
 
-gulp.task('watch', ['serve', 'sass', 'copy-html', 'clean-html', 'clean-scripts', 'copy-scripts'], function () {
+gulp.task('watch', ['serve', 'sass', 'copy-html', 'clean-html', 'clean-scripts', 'copy-scripts', 'moveFonts'], function () {
     gulp.watch([SOURCEPATHS.sassSource], ['sass']);
     gulp.watch([SOURCEPATHS.htmlSource], ['copy-html']);
     gulp.watch([SOURCEPATHS.jsSource], ['copy-scripts']);
